@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.signup-intro-main-container {
+    width: 100%;
+    height: 100%;
+}
+
+.signup-main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-intro-text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 0px 0px 40px;
+    gap: 30px;
+}
+
+h1.signup-intro-header {
+    color: #000;
+    font-family: Roboto;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: left;
+}
+
+p.signup-intro-paragraph {
+    color: #000;
+    font-family: Roboto;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-align: left;
+}
+
+.signup-intro-google-container {
+    display: flex;
+    width: 263px;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 42px;
+    border: 1px solid #E4EAED;
+    opacity: 0.8;
+    background: rgba(196, 196, 196, 0.00);
+    cursor: pointer;
+}
+
+p.signup-intro-google-paragraph {
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.signup-intro-apple-container {
+    display: flex;
+    width: 263px;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 42px;
+    border: 1px solid #E4EAED;
+    opacity: 0.8;
+    background: rgba(196, 196, 196, 0.00);
+    cursor: pointer;
+}
+
+p.signup-intro-apple-paragraph {
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.signup-intro-phone-email-container {
+    display: flex;
+    width: 263px;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 42px;
+    border: 1px solid #E4EAED;
+    opacity: 0.8;
+    background: rgba(196, 196, 196, 0.00);
+    cursor: pointer;
+}
+
+.signup-intro-phone-email-container p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.signup-intro-terms-service-container p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
+
+span.terms-of-service {
+    color: #1E97E1;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+span.privacy-policy {
+    color: #1E97E1;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+span.cookie-use {
+    color: #1E97E1;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.signup-intro-already-account-container p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+span.signup-intro-log-in {
+    color: #1E97E1;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+.sign-up-intro-footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 1440px;
+    padding: 40px 20px 30px 20px;
+    margin: auto;
+}
+
+.sign-up-intro-footer-container p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+@media screen and (max-width:1200px) {
+
+
+    .signup-main-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .signup-intro-text-container {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 40px 0px 40px;
+        gap: 30px;
+    }
+
+    .sign-up-intro-footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 800px;
+        padding: 40px 20px 30px 20px;
+        margin: auto;
+    }
+}
+
+
+
+@media screen and (max-width:769px) {
+    img.twitter-image {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .nomob {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:321px) {
+    .signup-intro-text-container {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px 0px 20px;
+        gap: 30px;
+    }
+
+    h1.signup-intro-header {
+        color: #000;
+        font-family: Roboto;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-align: left;
+    }
+
+    p.signup-intro-paragraph {
+        color: #000;
+        font-family: Roboto;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        text-align: left;
+    }
+}

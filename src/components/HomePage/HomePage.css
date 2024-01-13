@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+@font-face {
+    font-family: Segoe-UI;
+    src: url(fonts/Segoe-UI.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+.homepage-main-container {
+    width: 100%;
+    height: 100vh;
+}
+
+.homepage-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0px 30px 30px 30px;
+}
+
+.first-part-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 0px 30px;
+    gap: 20px;
+}
+
+.homepage-home-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.homepage-home-section img {
+    cursor: pointer;
+}
+
+p.home-section-paragraph {
+    color: #000;
+    font-family: Segoe-UI;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.homepage-first-part-tweet-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 27.5px;
+    background: #1D9BF0;
+    cursor: pointer;
+}
+
+.homepage-first-part-tweet-container p {
+    color: #FFF;
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.homepage-first-avatar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.homepage-first-avatar-container img {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+}
+
+p.homepage-first-avatar-text {
+    color: #000;
+    font-family: Segoe-UI;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.homepage-first-avatar-text-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+img.logout-image {
+    cursor: pointer;
+}
+
+a.logout-link {
+    cursor: pointer;
+}
+
+.second-part-container {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    border: 1px solid #C4C4C4;
+}
+
+.second-part-home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid #C4C4C4;
+}
+
+.second-part-form-container {
+    display: flex;
+    align-items: center;
+}
+
+.homepage-second-avatar-container {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 0px 0px;
+    flex-direction: column;
+}
+
+.homepage-second-avatar-container img {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 50px;
+}
+
+.second-part-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+textarea.second-part-text-area {
+    border: none;
+    color: var(--Gray-3, #828282);
+    font-family: Segoe UI;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    outline: none;
+}
+
+.second-part-write {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    gap: 15px;
+    padding: 0px 0px 20px 0px;
+}
+
+.second-part-tweet {
+    width: 568px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button.second-part-tweet-button {
+    display: inline-flex;
+    padding: 15px 30px 18px 30px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 120px;
+    opacity: 0.4;
+    border: none;
+    outline: none;
+    background: var(--Twitter-Blue, #1DA1F2);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    color: var(--White, #FFF);
+    font-family: Segoe UI;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.second-part-tweet-images {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.tweet-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0px 30px 0px;
+}
+
+.infos {
+    display: flex;
+    width: 520px;
+    align-items: flex-start;
+    padding: 0px 0px 0px 20px;
+    gap: 15px;
+}
+
+.tweet-names {
+    width:450px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dynamic-areas-flex{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0px 20px 0px 0px;
+}
+
+
+.tweets-area{
+    text-align:left;
+    width:400px;
+    height:40px;
+}
+
+.active-section{
+    width:350px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+
+.dynamic-areas-tweet-names{
+    display:flex;
+    align-items:center;
+}
+
+.tweet-container-general{
+    width:400px;
+}
+
+.tweet-names h3 {
+    color: #000;
+    font-family: Segoe-UI;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tweet-names p {
+    color: #000;
+    font-family: Segoe-UI;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* ////////////////////// */
+
+
+.third-part-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 0px 0px;
+    gap: 15px;
+}
+
+
+.search-twitter-container {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 31px;
+    background: #EFF3F4;
+
+}
+
+input.third-part-form-text {
+    width: 134px;
+    border: none;
+    outline: none;
+    color: #5C6C79;
+    font-family: Segoe UI;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: #EFF3F4;
+
+}
+
+.search-twitter-form {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    padding: 0px 0px 0px 10px;
+    gap: 10px;
+}
+
+.search-twitter-form img {
+    cursor: pointer;
+}
+
+.trends-twitter-container {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 370px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F7F9F9;
+}
+
+.trends-for-you {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px 0px 0px;
+}
+
+.trends-for-you h1 {
+    color: #000;
+    font-family: Segoe UI;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.trends-topics-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0px 20px;
+}
+
+p.trend-country {
+    color: #393B41;
+    font-family: Segoe UI;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.trend-topic {
+    text-align: left;
+}
+
+p.trend-topic-paragraph {
+    color: #000;
+    font-family: Segoe UI;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.you-might-like-container {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 232px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F7F9F9;
+    padding: 20px 0px 30px 0px;
+    gap: 20px;
+}
+
+.account-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+
+}
+
+p.name-account {
+    color: #000;
+    font-family: Segoe-UI;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+p.name-detail {
+    color: #000;
+    font-family: Segoe-UI;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button.button-follow {
+    display: inline-flex;
+    padding: 10px 18px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 50px;
+    background: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button.button-follow p {
+    color: #FFF;
+    font-family: Segoe UI;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    cursor: pointer;
+    /* 18px */
+}
+
+img.account-image {
+    border-radius: 60px;
+}
+
+button.button-show-more {
+    display: flex;
+    align-items: flex-start;
+    border: none;
+    outline: none;
+    background: #F7F9F9;
+    padding: 0px 0px 0px 20px;
+}
+
+button.button-show-more p {
+    color: #1DA1F2;
+    font-family: Segoe-UI;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    border: none;
+    cursor: pointer;
+    /* 18px */
+}
+
+.terms-service-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.terms-service-container p {
+    color: #536471;
+    font-family: Segoe-UI;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.terms-service-more {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.terms-service-more p {
+    color: #536471;
+    font-family: Segoe-UI;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
